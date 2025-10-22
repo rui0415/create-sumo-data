@@ -1,0 +1,19 @@
+<configuration>
+    <input>
+        <net-file value="../other.net.xml" />
+        <route-files value="../flw/re-manhattan_by<seed_val>.flw.xml" />
+        <gui-settings-file value="../manhattan.settings.xml" />
+        <additional-files value="../re-manhattan.add.xml"/>
+    </input>
+    <time>
+        <begin value="0" />
+        <end value="1100" />
+    </time>
+    <processing>
+        <max-num-vehicles value="1000" />
+    </processing>
+
+    <random_number>
+        <seed value='<seed_val>' />
+    </random_number>
+</configuration>

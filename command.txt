@@ -1,0 +1,2 @@
+python command.py
+sumo-gui -c ./cfg/re-manhattan_by4629.sumocfg

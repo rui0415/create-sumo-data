@@ -1,0 +1,11 @@
+{
+  "vType": {
+    "id": "car1",
+    "vClass": "passenger",
+    "color": "0,1,0",
+    "length": "5",
+    "width": "2",
+    "guiShape": "passenger",
+    "maxSpeed": "16.7"
+  }
+}

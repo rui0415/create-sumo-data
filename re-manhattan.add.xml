@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-12-19 03:20:58 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <vType id="type1" accel="2.8" decel="4.5" length="3" />
+
+    <rerouter id="rerouter_0" edges="A0A1">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A1B1" probability="0.10" />
+            <destProbReroute id="A1A2" probability="0.90" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_1" edges="A2A1">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A1B1" probability="0.40" />
+        <destProbReroute id="A1A0" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_2" edges="B1A1">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A1A2" probability="0.50" />
+        <destProbReroute id="A1A0" probability="0.50" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_3" edges="A1A2">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A2B2" probability="0.40" />
+        <destProbReroute id="A2A3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_4" edges="A3A2">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A2B2" probability="0.40" />
+        <destProbReroute id="A2A1" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_5" edges="B2A2">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A2A1" probability="0.50" />
+        <destProbReroute id="A2A3" probability="0.50" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_6" edges="A1A2">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A2B2" probability="0.40" />
+        <destProbReroute id="A2A3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_7" edges="A3A2">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A2B2" probability="0.40" />
+        <destProbReroute id="A2A1" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_8" edges="B2A2">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A2A1" probability="0.50" />
+        <destProbReroute id="A2A3" probability="0.50" />
+        </interval>
+    </rerouter>
+
+    <!-- corner -->
+    <rerouter id="rerouter_9" edges="B0A0">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A0A1" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_10" edges="A1A0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="A0B0" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_11" edges="A2A3">
+        <interval begin="0" end="1e9">
+           <destProbReroute id="A3B3" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_12" edges="B3A3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="A3A2" probability="1.0" />
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_13" edges="A3B3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B3B2" probability="0.40" />
+            <destProbReroute id="B3C3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_14" edges="C3B3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B3A3" probability="0.40" />
+            <destProbReroute id="B3A3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_15" edges="B2B3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B3C3" probability="0.50" />
+            <destProbReroute id="B3A3" probability="0.50" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_16" edges="B3C3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C3C2" probability="0.40" />
+            <destProbReroute id="C3D3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_17" edges="D3C3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C3C2" probability="0.40" />
+            <destProbReroute id="C3B3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_18" edges="C2C3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C3D3" probability="0.50" />
+            <destProbReroute id="C3B3" probability="0.50" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_19" edges="C3D3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D3D2" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_20" edges="D2D3">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D3C3" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_21" edges="D3D2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D2C2" probability="0.40" />
+            <destProbReroute id="D2D1" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_22" edges="D1D2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D2C2" probability="0.40" />
+            <destProbReroute id="D2D3" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_23" edges="C2D2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D2D1" probability="0.50" />
+            <destProbReroute id="D2D3" probability="0.50" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_24" edges="D2D1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D1C1" probability="0.40" />
+            <destProbReroute id="D1D0" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_25" edges="D0D1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D1C1" probability="0.40" />
+            <destProbReroute id="D1D2" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_26" edges="C1D1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D1D2" probability="0.50" />
+            <destProbReroute id="D1D0" probability="0.50" />
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_27" edges="D1D0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D0C0" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_28" edges="C0D0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="D0D1" probability="1.0" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_29" edges="D0C0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C0C1" probability="0.40" />
+            <destProbReroute id="C0B0" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_30" edges="B0C0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C0C1" probability="0.40" />
+            <destProbReroute id="C0D0" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_31" edges="C1C0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C0B0" probability="0.50" />
+            <destProbReroute id="C0D0" probability="0.50" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_32" edges="C0B0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B0B1" probability="0.40" />
+            <destProbReroute id="B0A0" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_33" edges="A0B0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B0B1" probability="0.40" />
+            <destProbReroute id="B0C0" probability="0.60" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_34" edges="B1B0">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B0A0" probability="0.50" />
+            <destProbReroute id="B0C0" probability="0.50" />
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_35" edges="B0B1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B1B2" probability="0.40" />
+            <destProbReroute id="B1C1" probability="0.30" />
+            <destProbReroute id="B1A1" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_36" edges="B2B1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B1B0" probability="0.40" />
+            <destProbReroute id="B1C1" probability="0.30" />
+            <destProbReroute id="B1A1" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_37" edges="A1B1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B1C1" probability="0.40" />
+            <destProbReroute id="B1B2" probability="0.30" />
+            <destProbReroute id="B1B0" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_38" edges="C1B1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B1A1" probability="0.40" />
+            <destProbReroute id="B1B2" probability="0.30" />
+            <destProbReroute id="B1B0" probability="0.30" />
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_39" edges="B1B2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B2B3" probability="0.40" />
+            <destProbReroute id="B2C2" probability="0.30" />
+            <destProbReroute id="B2A2" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_40" edges="B3B2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B2B1" probability="0.40" />
+            <destProbReroute id="B2C2" probability="0.30" />
+            <destProbReroute id="B2A2" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_41" edges="A2B2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B2C2" probability="0.40" />
+            <destProbReroute id="B2B3" probability="0.30" />
+            <destProbReroute id="B2B1" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_42" edges="C2B2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="B2A2" probability="0.40" />
+            <destProbReroute id="B2B3" probability="0.30" />
+            <destProbReroute id="B2B1" probability="0.30" />
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_43" edges="C0C1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C1C2" probability="0.40" />
+            <destProbReroute id="C1D1" probability="0.30" />
+            <destProbReroute id="C1B1" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_44" edges="C2C1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C1C0" probability="0.40" />
+            <destProbReroute id="C1D1" probability="0.30" />
+            <destProbReroute id="C1B1" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_45" edges="B1C1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C1D1" probability="0.40" />
+            <destProbReroute id="C1C0" probability="0.30" />
+            <destProbReroute id="C1C2" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_46" edges="D1C1">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C1B1" probability="0.40" />
+            <destProbReroute id="C1C2" probability="0.30" />
+            <destProbReroute id="C1C0" probability="0.30" />
+        </interval>
+    </rerouter>
+
+    <rerouter id="rerouter_47" edges="C1C2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C2C3" probability="0.40" />
+            <destProbReroute id="C2D2" probability="0.30" />
+            <destProbReroute id="C2B2" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_48" edges="C3C2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C2C1" probability="0.40" />
+            <destProbReroute id="C2D2" probability="0.30" />
+            <destProbReroute id="C2B2" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_49" edges="B2C2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C2D2" probability="0.40" />
+            <destProbReroute id="C2C1" probability="0.30" />
+            <destProbReroute id="C2C3" probability="0.30" />
+        </interval>
+    </rerouter>
+    <rerouter id="rerouter_50" edges="D2C2">
+        <interval begin="0" end="1e9">
+            <destProbReroute id="C2B2" probability="0.40" />
+            <destProbReroute id="C2C3" probability="0.30" />
+            <destProbReroute id="C2C1" probability="0.30" />
+        </interval>
+    </rerouter>
+</additional>
