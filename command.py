@@ -10,6 +10,7 @@ with open('config.json', 'r', encoding='utf-8') as f:
 
 # 設定
 seeds = [32, 64, 128, 256, 512]
+
 net_name = "re-manhattan"
 #net_name = "other"
 #net_name = "other2"
