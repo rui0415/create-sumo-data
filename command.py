@@ -3,14 +3,13 @@ import sys
 import subprocess
 import shutil
 import xml.etree.ElementTree as ET
-import random
 import json
 
 with open('config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)
 
 # 設定
-seeds = [32, 64, 128, 256, 512, 1024]
+seeds = [32, 64, 128, 256, 512]
 net_name = "re-manhattan"
 #net_name = "other"
 #net_name = "other2"
@@ -41,6 +40,7 @@ for seed_val in seeds:
             "--begin", "0",
             "--end", "1",  # 一瞬で生成
             "--period", str(period),
+            "--seed", str(seed_val),
             "--trip-attributes", "type='type1'",
             "-o", trips_file_tmp
         ], check=True)
