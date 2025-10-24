@@ -1,2 +1,3 @@
 python command.py
 sumo-gui -c ./cfg/re-manhattan_by32.sumocfg
+fc.exe .\csv\re-manhattan_seed256_n100.csv .\re-manhattan_seed256_n100.csv

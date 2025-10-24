@@ -5,11 +5,15 @@ import shutil
 import xml.etree.ElementTree as ET
 import json
 
+env = os.environ.copy()
+env["PYTHONHASHSEED"] = "0"
+
 with open('config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)
 
 # 設定
 seeds = [32, 64, 128, 256, 512]
+#seeds = [256]
 
 net_name = "re-manhattan"
 #net_name = "other"
@@ -44,7 +48,7 @@ for seed_val in seeds:
             "--seed", str(seed_val),
             "--trip-attributes", "type='type1'",
             "-o", trips_file_tmp
-        ], check=True)
+        ], check=True, env=env)
     except subprocess.CalledProcessError:
         print(f"Error at randomTrips.py on seed={seed_val}.")
         sys.exit(1)
@@ -62,12 +66,12 @@ for seed_val in seeds:
         trip.set("type", "car1")  # 全車両に適用
     tree.write(trips_file)
 
-    net_tree = ET.parse(network_file)
-    net_root = net_tree.getroot()
-    for t in net_root.findall("type"):
-        # すべての type に width を統一して付与（既存があれば上書き）
-        t.set("width", "200.0")   # 1車線あたり 4.0 m
-    net_tree.write(network_file)
+    #net_tree = ET.parse(network_file)
+    #net_root = net_tree.getroot()
+    #for t in net_root.findall("type"):
+    #    # すべての type に width を統一して付与（既存があれば上書き）
+    #    t.set("width", "200.0")   # 1車線あたり 4.0 m
+    #net_tree.write(network_file)
 
     # --- 3. sumocfg をコピー & 編集 ---
     cfg_file = f"{cfg_dir}/re-manhattan_by{seed_val}.sumocfg"
@@ -100,7 +104,13 @@ for seed_val in seeds:
         subprocess.run([
             "sumo",
             "-c", cfg_file,
-            "--fcd-output", fcd_file
+            "--fcd-output", fcd_file,
+            "--seed", str(seed_val),
+            "--threads", "1",              # 並列実行禁止
+            "--thread-rngs", "1",          # 乱数生成器を1つに固定
+            "--precision", "2",            # 出力精度統一
+            "--no-step-log", "true",
+            "--random", "false",
         ], check=True)
     except subprocess.CalledProcessError:
         print(f"Error at SUMO simulation on seed={seed_val}.")
